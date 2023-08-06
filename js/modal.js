@@ -16,12 +16,12 @@ async function getMovieId(url, options) {
 	function printMovieId(movie) {
 		const modalContent = `
 			<img src="${movie.posterUrlPreview}" alt="movie img">
-			${movie.nameRu ? `<h2><span>Название:	</span> ${movie.nameRu}</h2>` : ''}
-			${movie.year ? `<h4><span>Год:	</span> ${movie.year}</h4>` : ''}
-			${movie.genres ? `<h4><span>Жанр:	</span> ${movie.genres.map(genre => `	${genre.genre}`)}</h4>` : ''}
-			${movie.filmLength ? `<h4><span>Продолжительность</span>: ${movie.filmLength} минут</h4>` : ''}
-			${movie.webUrl ? `<h5><span>Сайт для просмотра:	</span><a href="${movie.webUrl}">${movie.webUrl}</a></h5>` : ''}
-			${movie.description ? `<p><span>Описание:	</span> ${movie.description}</p>` : ''}`
+			${movie.nameRu ? `<h2><span>Название:</span>${movie.nameRu}</h2>` : ''}
+			${movie.year ? `<h4><span>Год:</span>${movie.year}</h4>` : ''}
+			${movie.genres ? `<h4><span>Жанр:</span>${movie.genres.map(genre => `	${genre.genre}`)}</h4>` : ''}
+			${movie.filmLength ? `<h4><span>Продолжительность:</span>${movie.filmLength} минут</h4>` : ''}
+			${movie.webUrl ? `<h5><span>Сайт для просмотра:</span><a href="${movie.webUrl}">${movie.webUrl}</a></h5>` : ''}
+			${movie.description ? `<p><span>Описание:</span>${movie.description}</p>` : ''}`
 		const clerModalBtn = document.createElement('button');
 		clerModalBtn.classList.add('clerModalBtn');
 		clerModalBtn.textContent ='закрыть';
