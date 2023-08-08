@@ -9,7 +9,6 @@ const movieIdUrl = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/';
 async function getMovieId(url, options) {
 	const response = await fetch(url, options);
 	const resData = await response.json();
-	console.log(resData)
 	printMovieId(resData);
 }
 // Отрисовка данных модалки;
@@ -18,7 +17,7 @@ async function getMovieId(url, options) {
 			<img src="${movie.posterUrlPreview}" alt="movie img">
 			${movie.nameRu ? `<h2><span>Название:</span>${movie.nameRu}</h2>` : ''}
 			${movie.year ? `<h4><span>Год:</span>${movie.year}</h4>` : ''}
-			${movie.genres ? `<h4><span>Жанр:</span>${movie.genres.map(genre => `	${genre.genre}`)}</h4>` : ''}
+			${movie.genres ? `<h4><span>Жанр:</span>${movie.genres.map(genre =>`	${genre.genre}`)}</h4>` : ''}
 			${movie.filmLength ? `<h4><span>Продолжительность:</span>${movie.filmLength} минут</h4>` : ''}
 			${movie.webUrl ? `<h5><span>Сайт для просмотра:</span><a href="${movie.webUrl}">${movie.webUrl}</a></h5>` : ''}
 			${movie.description ? `<p><span>Описание:</span>${movie.description}</p>` : ''}`

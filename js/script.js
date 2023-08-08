@@ -27,7 +27,6 @@ async function getMove(url, options) {
 	const response = await fetch(complidMovieUrl, options);
 	const resData = await response.json();
 	moviPrint(resData);
-	console.log(resData)
 }	
 getMove(APY_URL, options);
 

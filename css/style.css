@@ -168,17 +168,21 @@ body {
 }
 
 .modal button {
-	width: 80px;
+	width: 100px;
 	height: 30px;
 	margin: 5px 0;
 	border: 0;
 	border-radius: 8px;
 	cursor: pointer;
 	align-self: center;
+	font-size: 20px;
+	box-shadow: 0 0 4px white;
 }
 
 .modal p {
+	height: 100px;
 	font-size: 14px;
+	overflow: auto;
 }
 
 .modal * {
@@ -215,4 +219,15 @@ body {
 .pogination div:hover {
 	color: cadetblue;
 	cursor: pointer;
+}
+
+@media  screen and (max-width: 450px) {
+	.header-content {
+		justify-content: center;
+		flex-direction: column;
+		margin: 9px;
+	}
+	.header-content>* {
+		margin: 3px;
+	}
 }
