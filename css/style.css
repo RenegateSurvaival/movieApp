@@ -146,6 +146,7 @@ body {
 	padding: 1%;
 	z-index: 1000;
 	transition: 1s;
+	font-size: 15px;
 }
 
 .modal-show {
@@ -159,12 +160,13 @@ body {
 }
 
 .modal h2 {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .modal span {
 	font-size: 14px;
 	color: #ffd80e;
+	margin: 0;
 }
 
 .modal button {
@@ -231,3 +233,4 @@ body {
 		margin: 3px;
 	}
 }
+
